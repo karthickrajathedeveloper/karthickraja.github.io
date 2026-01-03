@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: var(--main-color);
+    margin-top: 78px;
+}
+
+/* Theme */
+:root {
+    --main-color: #F0F2F5;
+    --gradient-color: linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    --black-color: black;
+    --white-color: white;
+    --skill-contact-box: white;
+}
+
+.light-theme {
+    --main-color: #F0F2F5;
+    --gradient-color: linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    --black-color: black;
+    --white-color: white;
+    --skill-contact-box: white;
+}
+
+.dark-theme {
+    --main-color: black;
+    --gradient-color: linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    --black-color: white;
+    --white-color: black;
+    --skill-contact-box: rgb(33, 33, 48);
+}
+
+/* Scroll top button */
+.top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: double 2px transparent;
+    background-image: linear-gradient(var(--main-color), var(--main-color)), radial-gradient(circle at top left, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding-block: 15px;
+    padding-inline: 12px;
+    border-radius: 20px;
+    z-index: 100;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all 0.6s;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(50%)
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.top{
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+
+.top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.arrow {
+    border: solid var(--black-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-color);
+    border-radius: 10px;
+}
+
+@media (min-width: 1450px) {
+    body {
+        width: 1700px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .top {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-inline: 9px;
+        bottom: 20px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top {
+        padding-inline: 7px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin-top: 78px;
+    }
+}

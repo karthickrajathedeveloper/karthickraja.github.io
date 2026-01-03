@@ -1,0 +1,147 @@
+footer {
+    margin-inline: 120px;
+    border-top: 2px solid rgba(128, 128, 128, 0.397);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+.footer-topic {
+    margin-bottom: 50px;
+    color: var(--black-color);
+}
+
+.footer-topic-mobile {
+    color: var(--black-color);
+    display: none;
+}
+
+.designed {
+    color: var(--black-color);
+}
+
+.footer-right {
+    margin-top: 12px;
+}
+
+.footer-nav {
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.footer {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.footer:hover {
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-about,
+.footer-contact {
+    margin-left: 30px;
+}
+
+.social-media-box {
+    display: flex;
+    float: right;
+}
+
+.social-media {
+    color: var(--black-color);
+    padding-block: 8px;
+    padding-inline: 10px;
+    border-radius: 60%;
+    font-size: 18px;
+    border: double 2px transparent;
+    background-image: linear-gradient(var(--main-color), var(--main-color)), radial-gradient(circle at top left, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.social-media:hover {
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), radial-gradient(circle at top left, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+}
+
+.github,
+.instragram {
+    margin-left: 30px;
+}
+
+
+@media (max-width: 1150px) {
+    footer {
+        margin-inline: 60px
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-topic {
+        display: none;
+    }
+
+    .footer-topic-mobile {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        margin-bottom: 40px;
+    }
+
+    .footer-left {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        font-weight: 700;
+    }
+
+    .footer-about,
+    .footer-contact {
+        margin-left: 50px;
+    }
+
+    .social-media-box {
+        float: left;
+    }
+
+    .github,
+    .instragram {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 524px) {
+    footer {
+        margin-inline: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .footer-about,
+    .footer-contact {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .footer-about,
+    .footer-contact {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+}

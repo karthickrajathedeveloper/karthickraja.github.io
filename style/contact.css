@@ -1,0 +1,363 @@
+.contact {
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section {
+    padding-inline: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.contact-section-1 {
+    flex-basis: 35%;
+}
+
+.contact-topic {
+    font-size: 62px;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.contact-para {
+    margin-bottom: 40px;
+    color: var(--black-color);
+}
+
+.email-icon-box,
+.phone-icon-box {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.email-icon,
+.phone-icon {
+    display: block;
+    font-size: 30px;
+    margin-right: 10px;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.phone-link,.email-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* form */
+form {
+    flex-basis: 50%;
+}
+
+.form-name,
+.form-email,
+.form-subject,
+.form-message {
+    display: block;
+    color: var(--black-color);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.name-box,
+.email-box,
+.subject-box {
+    width: 100%;
+    padding-block: 12px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--skill-contact-box);
+    color: var(--black-color);
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message-box {
+    width: 100%;
+    padding-inline: 15px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--skill-contact-box);
+    color: var(--black-color);
+    margin-bottom: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.email-icon-box:hover,
+.phone-icon-box:hover{
+    text-decoration: underline;
+}
+
+.name-box:hover,
+.email-box:hover,
+.subject-box:hover,
+.message-box:hover,
+.email-icon-box:hover,
+.phone-icon-box:hover {
+    cursor: pointer;
+    animation: shake 0.5s 0.8;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.form-submit {
+    padding-block: 15px;
+    padding-inline: 25px;
+    background: var(--gradient-color);
+    color: var(--black-color);
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.form-submit:hover {
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+input,
+textarea {
+    outline-color: rgb(255, 136, 0);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: rgb(255, 136, 0);
+}
+
+input::placeholder {
+    font-family: "Inter", sans-serif;
+}
+
+/* FAQ */
+.faq-section {
+    padding-inline: 120px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.faq-left {
+    flex-basis: 50%;
+}
+
+.faq-topic {
+    font-size: 54px;
+    margin-bottom: 25px;
+    color: var(--black-color);
+}
+
+.faq-topic-2 {
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.faq-para {
+    margin-bottom: 35px;
+    color: var(--black-color);
+}
+
+.contact-button {
+    padding-block: 15px;
+    padding-inline: 25px;
+    background: var(--gradient-color);
+    color: var(--black-color);
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.contact-button:hover {
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+/* faq-right */
+.faq-right {
+    flex-basis: 50%;
+}
+
+.faq-question-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question {
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    color: var(--black-color);
+}
+
+.faq-answer {
+    font-weight: 500;
+    color: var(--black-color);
+    line-height: 23px;
+    margin-bottom: 25px;
+    display: none;
+
+}
+
+.min {
+    display: none;
+}
+
+.arrow {
+    border: solid var(--black-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+@media (max-width: 1290px) {
+    .contact-topic {
+        font-size: 52px;
+    }
+
+    .faq-topic {
+        font-size: 44px
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .contact-section,
+    .faq-section {
+        padding-inline: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contact-section,
+    .faq-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section-1 {
+        max-width: 390px;
+        margin-bottom: 35px;
+    }
+
+    .faq-section {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width: 524px) {
+
+    .contact-section,
+    .faq-section {
+        padding-inline: 30px;
+    }
+}
+
+@media (max-width: 435px) {
+    .faq-topic {
+        font-size: 38px
+    }
+}
+
+@media (max-width: 380px) {
+    .contact-topic {
+        font-size: 42px;
+    }
+
+    .contact-section {
+        margin-top: 50px;
+    }
+
+    .faq-topic {
+        font-size: 30px
+    }
+}
